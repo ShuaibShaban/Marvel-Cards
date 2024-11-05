@@ -1,0 +1,48 @@
+* {
+    font-family: cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.cards-information {
+    display: flex;
+    gap: 20px;
+    /* width: 100%; */
+}
+
+.card {
+    border: 2px solid rgb(226, 208, 208);
+    border-radius: 40px;
+    width: 50%;
+    height: auto;
+}
+
+img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 25%;
+    border-radius: 150px;
+    background-color: burlywood;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+    display: block;
+}
+
+.card, .avengers-btns {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
