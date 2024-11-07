@@ -1,48 +1,97 @@
 * {
-    font-family: cursive;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1 {
     text-align: center;
+    font-size: 2.5em;
+    margin: 20px;
+    color: #333;
 }
 
 .cards-information {
     display: flex;
     gap: 20px;
-    /* width: 100%; */
+    justify-content: center;
+    width: 100%;
 }
 
 .card {
+    position: relative;
+    background-color: #fff;
     border: 2px solid rgb(226, 208, 208);
-    border-radius: 40px;
-    width: 50%;
-    height: auto;
+    border-radius: 20px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    width: 50%;
     height: 40%;
-    width: 40%;
-    margin-top: 10%;
-    margin-left: 25%;
-    border-radius: 150px;
-    background-color: burlywood;
+    margin: 20px auto;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
 }
 
 .card-title {
-    text-align: center;
+    font-size: 1.5em;
+    color: grey;
+    margin-bottom: 10px;
 }
 
 .card-text {
-    text-align: center;
-    display: block;
+    font-size: 1em;
+    color: black;
+    line-height: 1.5;
 }
 
-.card, .avengers-btns {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: 10px;
+.avengers-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: burlywood;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.avengers-btn:hover {
+    background-color: darkgoldenrod;
+}
+
+.card:hover .card-body {
+    transform: translateY(5px);
+    transition: transform 0.3s ease;
 }
